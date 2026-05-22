@@ -262,28 +262,84 @@ https://localhost:7289/openapi/v1.json
 ```
 
 ---
+# 📦 Dependências Instaladas
+
+Pacotes utilizados no projeto:
+
+```bash
+Microsoft.AspNetCore.OpenApi
+Microsoft.EntityFrameworkCore.Design
+Oracle.EntityFrameworkCore
+Oracle.ManagedDataAccess.Core
+Scalar.AspNetCore
+```
+
+### Instalação das dependências
+
+```bash
+dotnet add package Microsoft.AspNetCore.OpenApi
+
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+dotnet add package Oracle.EntityFrameworkCore
+
+dotnet add package Oracle.ManagedDataAccess.Core
+
+dotnet add package Scalar.AspNetCore
+```
 
 # ▶️ Como Executar
 
-### Restaurar dependências
+## Clonar repositório
+
+```bash
+git clone URL_DO_REPOSITORIO
+cd Challenge_Sprints1e2
+```
+
+## Configurar conexão Oracle
+
+Editar:
+
+```text
+appsettings.json
+```
+
+Exemplo:
+
+```json
+{
+  "ConnectionStrings": {
+    "OracleConnection":"User Id=SEU_USUARIO;Password=SUA_SENHA;Data Source=oracle.fiap.com.br:1521/orcl"
+  }
+}
+```
+
+## Restaurar dependências
 
 ```bash
 dotnet restore
 ```
 
-### Executar aplicação
+## Executar aplicação
 
 ```bash
 dotnet run
 ```
 
-### Acessar documentação
+## Acessar documentação
+
+Scalar:
 
 ```text
 https://localhost:7289/scalar/v1
 ```
 
----
+OpenAPI:
+
+```text
+https://localhost:7289/openapi/v1.json
+```
 
 # 👥 Integrantes
 
