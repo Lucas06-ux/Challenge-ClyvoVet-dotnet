@@ -187,6 +187,7 @@ Representa o profissional veterinário.
 ```text
 TUTOR
 VETERINARIO
+```
 
 ✅ CPF único para tutor
 
@@ -194,18 +195,22 @@ VETERINARIO
 
 Formato aceito:
 
+```text
 CRMV-UF-12345
+```
 
 Exemplo:
 
+```text
 CRMV-SP-12345
+```
 
 ✅ Um usuário pode possuir apenas um tutor
 
 ✅ Um usuário pode possuir apenas um veterinário
 
 ✅ Não é permitido excluir usuários vinculados a tutor ou veterinário
-````
+
 # 📡 Retornos HTTP Utilizados
 | Código | Descrição   |
 | ------ | ----------- |
@@ -247,21 +252,24 @@ Como o banco já existia previamente, a migration foi utilizada apenas para evid
 
 ---
 
-# 📄 Documentação OpenAPI
+---
 
-### Scalar
+# 📄 Documentação
 
-```text
-https://localhost:7289/scalar/v1
-```
+A documentação da API é gerada automaticamente pelo **Scalar (OpenAPI)**.
 
-### OpenAPI JSON
+Após executar a aplicação pelo Visual Studio, a interface será aberta automaticamente no navegador.
 
-```text
-https://localhost:7289/openapi/v1.json
-```
+**Finalidade do Scalar:**
+
+✅ Visualizar endpoints disponíveis  
+✅ Testar GET / POST / PUT / DELETE  
+✅ Visualizar exemplos e parâmetros  
+✅ Consultar respostas HTTP  
+✅ Navegar pela documentação da API  
 
 ---
+
 # 📦 Dependências Instaladas
 
 Pacotes utilizados no projeto:
@@ -274,30 +282,28 @@ Oracle.ManagedDataAccess.Core
 Scalar.AspNetCore
 ```
 
-### Instalação das dependências
-
-```bash
-dotnet add package Microsoft.AspNetCore.OpenApi
-
-dotnet add package Microsoft.EntityFrameworkCore.Design
-
-dotnet add package Oracle.EntityFrameworkCore
-
-dotnet add package Oracle.ManagedDataAccess.Core
-
-dotnet add package Scalar.AspNetCore
-```
+---
 
 # ▶️ Como Executar
 
-## Clonar repositório
+## 1. Clonar repositório
 
 ```bash
 git clone URL_DO_REPOSITORIO
 cd Challenge_Sprints1e2
 ```
 
-## Configurar conexão Oracle
+## 2. Abrir projeto
+
+Abrir a solução:
+
+```text
+Challenge_Sprints1e2.sln
+```
+
+no **Visual Studio**.
+
+## 3. Configurar conexão Oracle
 
 Editar:
 
@@ -315,31 +321,27 @@ Exemplo:
 }
 ```
 
-## Restaurar dependências
+## 4. Restaurar dependências
+
+O Visual Studio restaurará automaticamente as dependências ao abrir o projeto.
+
+Caso necessário:
 
 ```bash
 dotnet restore
 ```
 
-## Executar aplicação
+## 5. Executar aplicação
 
-```bash
-dotnet run
-```
-
-## Acessar documentação
-
-Scalar:
+Clique no botão:
 
 ```text
-https://localhost:7289/scalar/v1
+▶ Play / IIS Express
 ```
 
-OpenAPI:
+A documentação Scalar será aberta automaticamente.
 
-```text
-https://localhost:7289/openapi/v1.json
-```
+---
 
 # 👥 Integrantes
 
