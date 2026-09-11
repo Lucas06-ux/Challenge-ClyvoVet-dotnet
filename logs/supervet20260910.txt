@@ -1,0 +1,752 @@
+2026-09-10 13:47:09.836 -03:00 [INF] Now listening on: https://localhost:7289
+2026-09-10 13:47:09.872 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 13:47:09.912 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 13:47:09.914 -03:00 [INF] Hosting environment: Development
+2026-09-10 13:47:09.915 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 13:47:10.619 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/v1 - null null
+2026-09-10 13:47:10.856 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 13:47:11.018 -03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-09-10 13:47:11.036 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 13:47:11.041 -03:00 [INF] HTTP GET /scalar/v1 responded 200 in 233.9039 ms
+2026-09-10 13:47:11.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.js - null null
+2026-09-10 13:47:11.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_vs/browserLink - null null
+2026-09-10 13:47:11.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-10 13:47:11.047 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - null null
+2026-09-10 13:47:11.052 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/v1 - 200 null text/html 449.6846ms
+2026-09-10 13:47:11.054 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 13:47:11.062 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 13:47:11.069 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 21.7904ms
+2026-09-10 13:47:11.077 -03:00 [INF] Sending file with download name ''.
+2026-09-10 13:47:11.084 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 13:47:11.085 -03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 23.5411 ms
+2026-09-10 13:47:11.088 -03:00 [INF] Sending file with download name ''.
+2026-09-10 13:47:11.088 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 41.4936ms
+2026-09-10 13:47:11.107 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 13:47:11.109 -03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 57.4427 ms
+2026-09-10 13:47:11.112 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.js - 200 1078503 text/javascript 65.4741ms
+2026-09-10 13:47:11.126 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.0602ms
+2026-09-10 13:47:11.419 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/openapi/v1.json - null null
+2026-09-10 13:47:11.422 -03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 13:47:11.460 -03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 13:47:11.462 -03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 39.7547 ms
+2026-09-10 13:47:11.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/openapi/v1.json - 200 null application/json;charset=utf-8 44.4593ms
+2026-09-10 13:47:11.941 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/favicon.svg - null null
+2026-09-10 13:47:11.944 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-09-10 13:47:11.946 -03:00 [INF] Sending file with download name ''.
+2026-09-10 13:47:11.948 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-09-10 13:47:11.949 -03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 4.5531 ms
+2026-09-10 13:47:11.951 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/favicon.svg - 200 533 image/svg+xml 9.3128ms
+2026-09-10 13:47:25.129 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/api/Tutores - null null
+2026-09-10 13:47:25.132 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 13:47:25.188 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 13:47:25.425 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 13:47:27.143 -03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "t"."ID_TUTOR" "IdTutor", "t"."NOME_TUTOR" "NomeTutor", "t"."CPF" "Cpf", "t"."TELEFONE" "Telefone", "t"."DT_NASCIMENTO" "DataNascimento", "t"."ID_USUARIO" "IdUsuario", "t0"."EMAIL" "EmailUsuario"
+FROM "TB_TUTOR" "t"
+INNER JOIN "TB_USUARIO" "t0" ON "t"."ID_USUARIO" = "t0"."ID_USUARIO"
+2026-09-10 13:47:27.183 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1753.3398ms.
+2026-09-10 13:47:27.191 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 13:47:27.200 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 2007.2606ms
+2026-09-10 13:47:27.201 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 13:47:27.203 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 2071.0478 ms
+2026-09-10 13:47:27.210 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/api/Tutores - 200 null application/json; charset=utf-8 2081.7627ms
+2026-09-10 14:08:17.140 -03:00 [INF] Now listening on: https://localhost:7289
+2026-09-10 14:08:17.171 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 14:08:17.355 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 14:08:17.357 -03:00 [INF] Hosting environment: Development
+2026-09-10 14:08:17.358 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 14:08:17.810 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/v1 - null null
+2026-09-10 14:08:17.951 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 14:08:18.064 -03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-09-10 14:08:18.078 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 14:08:18.082 -03:00 [INF] HTTP GET /scalar/v1 responded 200 in 151.3894 ms
+2026-09-10 14:08:18.084 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-10 14:08:18.090 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/v1 - 200 null text/html 292.0325ms
+2026-09-10 14:08:18.095 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 11.5436ms
+2026-09-10 14:08:18.099 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.js - null null
+2026-09-10 14:08:18.100 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_vs/browserLink - null null
+2026-09-10 14:08:18.099 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - null null
+2026-09-10 14:08:18.106 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 14:08:18.110 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 14:08:18.120 -03:00 [INF] Sending file with download name ''.
+2026-09-10 14:08:18.120 -03:00 [INF] Sending file with download name ''.
+2026-09-10 14:08:18.123 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 14:08:18.123 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 14:08:18.124 -03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 19.9819 ms
+2026-09-10 14:08:18.126 -03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 16.0019 ms
+2026-09-10 14:08:18.127 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.js - 304 null null 27.8251ms
+2026-09-10 14:08:18.129 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - 304 null null 29.5898ms
+2026-09-10 14:08:18.143 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.4361ms
+2026-09-10 14:08:18.452 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/openapi/v1.json - null null
+2026-09-10 14:08:18.455 -03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 14:08:18.485 -03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 14:08:18.487 -03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 32.0904 ms
+2026-09-10 14:08:18.490 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/openapi/v1.json - 200 null application/json;charset=utf-8 37.3357ms
+2026-09-10 17:35:54.166 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 17:35:54.196 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 17:35:54.197 -03:00 [INF] Hosting environment: Development
+2026-09-10 17:35:54.198 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 17:36:18.948 -03:00 [INF] Application is shutting down...
+2026-09-10 17:36:25.428 -03:00 [INF] Now listening on: https://localhost:7289
+2026-09-10 17:36:25.462 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 17:36:25.654 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 17:36:25.655 -03:00 [INF] Hosting environment: Development
+2026-09-10 17:36:25.656 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 17:36:26.248 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/v1 - null null
+2026-09-10 17:36:26.451 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 17:36:26.619 -03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-09-10 17:36:26.633 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 17:36:26.637 -03:00 [INF] HTTP GET /scalar/v1 responded 200 in 221.0455 ms
+2026-09-10 17:36:26.644 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-10 17:36:26.645 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_vs/browserLink - null null
+2026-09-10 17:36:26.644 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.js - null null
+2026-09-10 17:36:26.644 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - null null
+2026-09-10 17:36:26.683 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/v1 - 200 null text/html 452.9379ms
+2026-09-10 17:36:26.692 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 17:36:26.691 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 47.8675ms
+2026-09-10 17:36:26.693 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 17:36:26.727 -03:00 [INF] Sending file with download name ''.
+2026-09-10 17:36:26.727 -03:00 [INF] Sending file with download name ''.
+2026-09-10 17:36:26.731 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 17:36:26.731 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 17:36:26.732 -03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 42.6210 ms
+2026-09-10 17:36:26.733 -03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 39.7416 ms
+2026-09-10 17:36:26.735 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.js - 304 null null 91.3444ms
+2026-09-10 17:36:26.737 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - 304 null null 93.1711ms
+2026-09-10 17:36:26.762 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.4332ms
+2026-09-10 17:36:26.820 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/openapi/v1.json - null null
+2026-09-10 17:36:26.823 -03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 17:36:26.866 -03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 17:36:26.867 -03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 44.4834 ms
+2026-09-10 17:36:26.871 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/openapi/v1.json - 200 null application/json;charset=utf-8 51.5655ms
+2026-09-10 17:36:32.074 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/api/Tutores - null null
+2026-09-10 17:36:32.077 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 17:36:32.105 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 17:36:32.320 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 17:36:33.964 -03:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "t"."ID_TUTOR" "IdTutor", "t"."NOME_TUTOR" "NomeTutor", "t"."CPF" "Cpf", "t"."TELEFONE" "Telefone", "t"."DT_NASCIMENTO" "DataNascimento", "t"."ID_USUARIO" "IdUsuario", "t0"."EMAIL" "EmailUsuario"
+FROM "TB_TUTOR" "t"
+INNER JOIN "TB_USUARIO" "t0" ON "t"."ID_USUARIO" = "t0"."ID_USUARIO"
+2026-09-10 17:36:34.006 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1682.0446ms.
+2026-09-10 17:36:34.014 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 17:36:34.025 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 1914.876ms
+2026-09-10 17:36:34.027 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 17:36:34.027 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 1950.8047 ms
+2026-09-10 17:36:34.036 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/api/Tutores - 200 null application/json; charset=utf-8 1962.2873ms
+2026-09-10 18:00:38.833 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:00:38.857 -03:00 [INF] Hosting environment: Development
+2026-09-10 18:00:38.857 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:00:38.979 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:00:38.998 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:00:39.003 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:00:39.014 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:00:39.203 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:00:40.635 -03:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "t"."ID_TUTOR" "IdTutor", "t"."NOME_TUTOR" "NomeTutor", "t"."CPF" "Cpf", "t"."TELEFONE" "Telefone", "t"."DT_NASCIMENTO" "DataNascimento", "t"."ID_USUARIO" "IdUsuario", "t0"."EMAIL" "EmailUsuario"
+FROM "TB_TUTOR" "t"
+INNER JOIN "TB_USUARIO" "t0" ON "t"."ID_USUARIO" = "t0"."ID_USUARIO"
+2026-09-10 18:00:40.668 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1462.0626ms.
+2026-09-10 18:00:40.673 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:00:40.693 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 1676.9083ms
+2026-09-10 18:00:40.694 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:00:40.696 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 1710.1193 ms
+2026-09-10 18:00:40.704 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 1741.5974ms
+2026-09-10 18:00:40.716 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:00:40.717 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:00:40.755 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:00:40.755 -03:00 [INF] HTTP GET /health responded 200 in 38.3795 ms
+2026-09-10 18:00:40.755 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 39.6496ms
+2026-09-10 18:00:40.761 -03:00 [INF] Application is shutting down...
+2026-09-10 18:16:13.068 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:16:13.090 -03:00 [INF] Hosting environment: Development
+2026-09-10 18:16:13.091 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:16:13.128 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:16:13.146 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:16:13.150 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:16:13.162 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:16:13.240 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:16:14.370 -03:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "t"."ID_TUTOR" "IdTutor", "t"."NOME_TUTOR" "NomeTutor", "t"."CPF" "Cpf", "t"."TELEFONE" "Telefone", "t"."DT_NASCIMENTO" "DataNascimento", "t"."ID_USUARIO" "IdUsuario", "t0"."EMAIL" "EmailUsuario"
+FROM "TB_TUTOR" "t"
+INNER JOIN "TB_USUARIO" "t0" ON "t"."ID_USUARIO" = "t0"."ID_USUARIO"
+2026-09-10 18:16:14.405 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1161.2132ms.
+2026-09-10 18:16:14.409 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:16:14.428 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 1263.0878ms
+2026-09-10 18:16:14.428 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:16:14.430 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 1296.0328 ms
+2026-09-10 18:16:14.438 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 1326.4317ms
+2026-09-10 18:16:14.451 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:16:14.452 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:16:14.486 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:16:14.487 -03:00 [INF] HTTP GET /health responded 200 in 35.2932 ms
+2026-09-10 18:16:14.487 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 36.6338ms
+2026-09-10 18:16:14.493 -03:00 [INF] Application is shutting down...
+2026-09-10 18:16:23.800 -03:00 [INF] Now listening on: https://localhost:7289
+2026-09-10 18:16:23.856 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 18:16:24.150 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:16:24.152 -03:00 [INF] Hosting environment: Development
+2026-09-10 18:16:24.154 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:16:24.254 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/v1 - null null
+2026-09-10 18:16:24.430 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 18:16:24.556 -03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-09-10 18:16:24.572 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-09-10 18:16:24.575 -03:00 [INF] HTTP GET /scalar/v1 responded 200 in 169.5408 ms
+2026-09-10 18:16:24.580 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_vs/browserLink - null null
+2026-09-10 18:16:24.580 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - null null
+2026-09-10 18:16:24.580 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/scalar/scalar.js - null null
+2026-09-10 18:16:24.580 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-10 18:16:24.620 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 18:16:24.620 -03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 18:16:24.616 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/v1 - 200 null text/html 378.3341ms
+2026-09-10 18:16:24.640 -03:00 [INF] Sending file with download name ''.
+2026-09-10 18:16:24.640 -03:00 [INF] Sending file with download name ''.
+2026-09-10 18:16:24.665 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 85.0352ms
+2026-09-10 18:16:24.666 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-09-10 18:16:24.666 -03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-09-10 18:16:24.671 -03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 52.4056 ms
+2026-09-10 18:16:24.671 -03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 51.1698 ms
+2026-09-10 18:16:24.672 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.aspnetcore.js - 304 null null 92.2582ms
+2026-09-10 18:16:24.674 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/scalar/scalar.js - 304 null null 93.9992ms
+2026-09-10 18:16:24.684 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.4148ms
+2026-09-10 18:16:24.760 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7289/openapi/v1.json - null null
+2026-09-10 18:16:24.764 -03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 18:16:24.789 -03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-09-10 18:16:24.791 -03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 27.5098 ms
+2026-09-10 18:16:24.793 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7289/openapi/v1.json - 200 null application/json;charset=utf-8 33.2448ms
+2026-09-10 18:47:18.445 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:47:18.468 -03:00 [INF] Hosting environment: IntegrationTests
+2026-09-10 18:47:18.469 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:47:18.504 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:47:18.523 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:47:18.526 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:47:18.535 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:47:18.548 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.705 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 153.3676ms.
+2026-09-10 18:47:18.708 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:47:18.733 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 194.5654ms
+2026-09-10 18:47:18.733 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:47:18.734 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 223.8480 ms
+2026-09-10 18:47:18.737 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 248.8823ms
+2026-09-10 18:47:18.758 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 62
+2026-09-10 18:47:18.761 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.769 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.787 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.845 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:18.846 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 58.9533ms.
+2026-09-10 18:47:18.846 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:18.857 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 88.8318ms
+2026-09-10 18:47:18.858 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.858 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 97.5719 ms
+2026-09-10 18:47:18.858 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 99.9104ms
+2026-09-10 18:47:18.861 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:47:18.862 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:18.866 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.868 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.899 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:18.901 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 32.1488ms.
+2026-09-10 18:47:18.901 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:47:18.901 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 34.4382ms
+2026-09-10 18:47:18.901 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:18.901 -03:00 [INF] HTTP DELETE /api/Usuarios/3 responded 204 in 39.3020 ms
+2026-09-10 18:47:18.901 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - 204 null null 40.1062ms
+2026-09-10 18:47:18.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:47:18.903 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.908 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.909 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.916 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 6.8196ms.
+2026-09-10 18:47:18.916 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:18.917 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 9.6916ms
+2026-09-10 18:47:18.917 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.917 -03:00 [INF] HTTP GET /api/Usuarios/3 responded 404 in 15.4524 ms
+2026-09-10 18:47:18.918 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/3 - 404 null text/plain; charset=utf-8 15.7595ms
+2026-09-10 18:47:18.920 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 64
+2026-09-10 18:47:18.921 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:18.925 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.925 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.937 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 11.8743ms.
+2026-09-10 18:47:18.937 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:18.938 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 13.0802ms
+2026-09-10 18:47:18.938 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:18.938 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 400 in 17.3876 ms
+2026-09-10 18:47:18.938 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 400 null text/plain; charset=utf-8 17.6829ms
+2026-09-10 18:47:18.947 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 77
+2026-09-10 18:47:18.948 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:18.948 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.948 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.954 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:18.955 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 6.4409ms.
+2026-09-10 18:47:18.955 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:47:18.955 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 6.9084ms
+2026-09-10 18:47:18.955 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:18.955 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 204 in 7.1291 ms
+2026-09-10 18:47:18.955 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 204 null null 7.5938ms
+2026-09-10 18:47:18.956 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/1 - null null
+2026-09-10 18:47:18.956 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.956 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.957 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.958 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.2767ms.
+2026-09-10 18:47:18.958 -03:00 [INF] Executing OkObjectResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:18.958 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 1.8796ms
+2026-09-10 18:47:18.958 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.958 -03:00 [INF] HTTP GET /api/Usuarios/1 responded 200 in 2.2064 ms
+2026-09-10 18:47:18.958 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/1 - 200 null application/json; charset=utf-8 2.5162ms
+2026-09-10 18:47:18.961 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:47:18.962 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.962 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.962 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.963 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:18.963 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.8945ms.
+2026-09-10 18:47:18.963 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:18.963 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.7231ms
+2026-09-10 18:47:18.963 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.963 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.9412 ms
+2026-09-10 18:47:18.963 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 2.162ms
+2026-09-10 18:47:18.975 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:47:18.975 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:47:18.987 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:47:18.987 -03:00 [INF] HTTP GET /health responded 200 in 12.1383 ms
+2026-09-10 18:47:18.988 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 12.9317ms
+2026-09-10 18:47:18.989 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:47:18.989 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:18.989 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.989 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.990 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.3204ms.
+2026-09-10 18:47:18.990 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:18.990 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 0.7301ms
+2026-09-10 18:47:18.990 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:18.990 -03:00 [INF] HTTP DELETE /api/Usuarios/9999 responded 404 in 0.8993 ms
+2026-09-10 18:47:18.990 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.0326ms
+2026-09-10 18:47:18.992 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:47:18.992 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.992 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.992 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.993 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:18.993 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.4244ms.
+2026-09-10 18:47:18.993 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:18.993 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 0.9104ms
+2026-09-10 18:47:18.993 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:18.993 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.0522 ms
+2026-09-10 18:47:18.993 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 1.1716ms
+2026-09-10 18:47:18.994 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:47:18.994 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.994 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:18.995 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:18.995 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.2412ms.
+2026-09-10 18:47:18.995 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:18.995 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 0.6624ms
+2026-09-10 18:47:18.995 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:18.995 -03:00 [INF] HTTP GET /api/Usuarios/9999 responded 404 in 0.8029 ms
+2026-09-10 18:47:18.995 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 0.9222ms
+2026-09-10 18:47:19.000 -03:00 [INF] Application is shutting down...
+2026-09-10 18:47:54.291 -03:00 [INF] Saved 0 entities to in-memory store.
+2026-09-10 18:47:54.421 -03:00 [INF] Saved 4 entities to in-memory store.
+2026-09-10 18:47:54.542 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:47:54.546 -03:00 [INF] Hosting environment: IntegrationTests
+2026-09-10 18:47:54.546 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:47:54.581 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:47:54.598 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:47:54.602 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:47:54.611 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:47:54.615 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:54.771 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 153.1954ms.
+2026-09-10 18:47:54.774 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:47:54.798 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 184.9022ms
+2026-09-10 18:47:54.799 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:47:54.800 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 214.0332 ms
+2026-09-10 18:47:54.803 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 237.4104ms
+2026-09-10 18:47:54.823 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 62
+2026-09-10 18:47:54.825 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:54.833 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:54.850 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:54.907 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:54.908 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 58ms.
+2026-09-10 18:47:54.909 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:54.920 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 87.0696ms
+2026-09-10 18:47:54.920 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:54.920 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 96.1519 ms
+2026-09-10 18:47:54.921 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 98.0733ms
+2026-09-10 18:47:54.924 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:47:54.924 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:54.929 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:54.931 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:54.961 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:54.963 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 31.9553ms.
+2026-09-10 18:47:54.963 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:47:54.963 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 34.1003ms
+2026-09-10 18:47:54.963 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:54.963 -03:00 [INF] HTTP DELETE /api/Usuarios/3 responded 204 in 38.6303 ms
+2026-09-10 18:47:54.963 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - 204 null null 39.4274ms
+2026-09-10 18:47:54.964 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:47:54.965 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:54.969 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:54.971 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:54.978 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 6.813ms.
+2026-09-10 18:47:54.978 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:54.979 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 9.5702ms
+2026-09-10 18:47:54.979 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:54.979 -03:00 [INF] HTTP GET /api/Usuarios/3 responded 404 in 15.1262 ms
+2026-09-10 18:47:54.979 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/3 - 404 null text/plain; charset=utf-8 15.3612ms
+2026-09-10 18:47:54.983 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 64
+2026-09-10 18:47:54.983 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:54.988 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:54.989 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.002 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 12.9844ms.
+2026-09-10 18:47:55.002 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:55.002 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 14.628ms
+2026-09-10 18:47:55.003 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:55.003 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 400 in 19.4748 ms
+2026-09-10 18:47:55.003 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 400 null text/plain; charset=utf-8 19.7505ms
+2026-09-10 18:47:55.011 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 77
+2026-09-10 18:47:55.011 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:55.011 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.012 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.020 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:55.020 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 8.2768ms.
+2026-09-10 18:47:55.020 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:47:55.020 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 8.9061ms
+2026-09-10 18:47:55.020 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:47:55.020 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 204 in 9.1747 ms
+2026-09-10 18:47:55.021 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 204 null null 9.8044ms
+2026-09-10 18:47:55.021 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/1 - null null
+2026-09-10 18:47:55.022 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:55.022 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.022 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.023 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.1651ms.
+2026-09-10 18:47:55.023 -03:00 [INF] Executing OkObjectResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:55.023 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 1.6602ms
+2026-09-10 18:47:55.023 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:55.023 -03:00 [INF] HTTP GET /api/Usuarios/1 responded 200 in 1.8665 ms
+2026-09-10 18:47:55.024 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/1 - 200 null application/json; charset=utf-8 2.1121ms
+2026-09-10 18:47:55.027 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:47:55.027 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:55.027 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.028 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.028 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:55.028 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.6635ms.
+2026-09-10 18:47:55.028 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:55.029 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.5756ms
+2026-09-10 18:47:55.029 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:55.029 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.8130 ms
+2026-09-10 18:47:55.029 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 2.0601ms
+2026-09-10 18:47:55.040 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:47:55.040 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:47:55.051 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:47:55.052 -03:00 [INF] HTTP GET /health responded 200 in 11.6904 ms
+2026-09-10 18:47:55.052 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 12.4628ms
+2026-09-10 18:47:55.054 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:47:55.055 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:55.055 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.055 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.055 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.3612ms.
+2026-09-10 18:47:55.055 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:55.056 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 0.9235ms
+2026-09-10 18:47:55.056 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:47:55.056 -03:00 [INF] HTTP DELETE /api/Usuarios/9999 responded 404 in 1.1270 ms
+2026-09-10 18:47:55.056 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.3205ms
+2026-09-10 18:47:55.058 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:47:55.058 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:55.058 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.059 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.059 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:47:55.059 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.5722ms.
+2026-09-10 18:47:55.059 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:47:55.060 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.3022ms
+2026-09-10 18:47:55.060 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:47:55.060 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.4781 ms
+2026-09-10 18:47:55.060 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 1.6589ms
+2026-09-10 18:47:55.062 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:47:55.062 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:55.062 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:47:55.062 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:47:55.063 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.4058ms.
+2026-09-10 18:47:55.063 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:47:55.063 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 1.0348ms
+2026-09-10 18:47:55.063 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:47:55.063 -03:00 [INF] HTTP GET /api/Usuarios/9999 responded 404 in 1.2134 ms
+2026-09-10 18:47:55.063 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.3667ms
+2026-09-10 18:47:55.070 -03:00 [INF] Application is shutting down...
+2026-09-10 18:48:40.951 -03:00 [INF] Saved 0 entities to in-memory store.
+2026-09-10 18:48:41.083 -03:00 [INF] Saved 4 entities to in-memory store.
+2026-09-10 18:48:41.206 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:48:41.210 -03:00 [INF] Hosting environment: IntegrationTests
+2026-09-10 18:48:41.210 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:48:41.244 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:48:41.261 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:48:41.264 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:48:41.273 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:48:41.277 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.433 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 152.9235ms.
+2026-09-10 18:48:41.436 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:48:41.460 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 184.307ms
+2026-09-10 18:48:41.460 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:48:41.462 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 213.2111 ms
+2026-09-10 18:48:41.465 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 235.5443ms
+2026-09-10 18:48:41.486 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 62
+2026-09-10 18:48:41.488 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.496 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.514 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.570 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:48:41.571 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 57.0251ms.
+2026-09-10 18:48:41.571 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:48:41.582 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 86.5444ms
+2026-09-10 18:48:41.583 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.583 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 95.5661 ms
+2026-09-10 18:48:41.583 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 97.3845ms
+2026-09-10 18:48:41.586 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:48:41.587 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:48:41.591 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.593 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.623 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:48:41.625 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 31.9402ms.
+2026-09-10 18:48:41.625 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:48:41.625 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 34.0903ms
+2026-09-10 18:48:41.625 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:48:41.626 -03:00 [INF] HTTP DELETE /api/Usuarios/3 responded 204 in 38.8171 ms
+2026-09-10 18:48:41.626 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - 204 null null 39.7279ms
+2026-09-10 18:48:41.627 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:48:41.628 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.632 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.634 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.641 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 7.5398ms.
+2026-09-10 18:48:41.642 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:48:41.642 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 10.4008ms
+2026-09-10 18:48:41.642 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.643 -03:00 [INF] HTTP GET /api/Usuarios/3 responded 404 in 15.5526 ms
+2026-09-10 18:48:41.643 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/3 - 404 null text/plain; charset=utf-8 16.0068ms
+2026-09-10 18:48:41.646 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 64
+2026-09-10 18:48:41.646 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:48:41.650 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.651 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.663 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 12.0808ms.
+2026-09-10 18:48:41.663 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:48:41.663 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 13.2079ms
+2026-09-10 18:48:41.663 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:48:41.663 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 400 in 17.5497 ms
+2026-09-10 18:48:41.663 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 400 null text/plain; charset=utf-8 17.8541ms
+2026-09-10 18:48:41.672 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 77
+2026-09-10 18:48:41.672 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:48:41.672 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.672 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.679 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:48:41.679 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 6.9004ms.
+2026-09-10 18:48:41.679 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:48:41.679 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 7.429ms
+2026-09-10 18:48:41.679 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:48:41.680 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 204 in 7.6633 ms
+2026-09-10 18:48:41.680 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 204 null null 8.2032ms
+2026-09-10 18:48:41.681 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/1 - null null
+2026-09-10 18:48:41.681 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.681 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.681 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.683 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4159ms.
+2026-09-10 18:48:41.683 -03:00 [INF] Executing OkObjectResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:48:41.683 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 2.0111ms
+2026-09-10 18:48:41.683 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.683 -03:00 [INF] HTTP GET /api/Usuarios/1 responded 200 in 2.2507 ms
+2026-09-10 18:48:41.683 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/1 - 200 null application/json; charset=utf-8 2.4943ms
+2026-09-10 18:48:41.685 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 67
+2026-09-10 18:48:41.686 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.686 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.686 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.687 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:48:41.687 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.6255ms.
+2026-09-10 18:48:41.687 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:48:41.687 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.4219ms
+2026-09-10 18:48:41.687 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.687 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.6404 ms
+2026-09-10 18:48:41.687 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 1.8466ms
+2026-09-10 18:48:41.688 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 67
+2026-09-10 18:48:41.688 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.688 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.688 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.688 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.2563ms.
+2026-09-10 18:48:41.688 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:48:41.688 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 0.5709ms
+2026-09-10 18:48:41.689 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.689 -03:00 [INF] HTTP POST /api/Usuarios responded 400 in 0.7685 ms
+2026-09-10 18:48:41.689 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 400 null text/plain; charset=utf-8 0.9016ms
+2026-09-10 18:48:41.690 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:48:41.690 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:48:41.700 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:48:41.701 -03:00 [INF] HTTP GET /health responded 200 in 10.7240 ms
+2026-09-10 18:48:41.701 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 11.346ms
+2026-09-10 18:48:41.702 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:48:41.703 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:48:41.703 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.703 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.703 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.3443ms.
+2026-09-10 18:48:41.703 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:48:41.703 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 0.7773ms
+2026-09-10 18:48:41.703 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:48:41.703 -03:00 [INF] HTTP DELETE /api/Usuarios/9999 responded 404 in 0.9448 ms
+2026-09-10 18:48:41.703 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.086ms
+2026-09-10 18:48:41.705 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:48:41.705 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.705 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.706 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.706 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:48:41.706 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.493ms.
+2026-09-10 18:48:41.706 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:48:41.707 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.0805ms
+2026-09-10 18:48:41.707 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:48:41.707 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.2626 ms
+2026-09-10 18:48:41.707 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 1.4805ms
+2026-09-10 18:48:41.708 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:48:41.708 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.708 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:48:41.709 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:48:41.709 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.35ms.
+2026-09-10 18:48:41.709 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:48:41.709 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 0.8854ms
+2026-09-10 18:48:41.709 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:48:41.709 -03:00 [INF] HTTP GET /api/Usuarios/9999 responded 404 in 1.0906 ms
+2026-09-10 18:48:41.709 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.3451ms
+2026-09-10 18:48:41.715 -03:00 [INF] Application is shutting down...
+2026-09-10 18:49:48.717 -03:00 [INF] Saved 0 entities to in-memory store.
+2026-09-10 18:49:48.848 -03:00 [INF] Saved 4 entities to in-memory store.
+2026-09-10 18:49:48.968 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 18:49:48.972 -03:00 [INF] Hosting environment: IntegrationTests
+2026-09-10 18:49:48.972 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 18:49:49.007 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Tutores - null null
+2026-09-10 18:49:49.024 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 18:49:49.028 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:49:49.037 -03:00 [INF] Route matched with {action = "GetAll", controller = "Tutores"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller SuperVet.Controllers.TutoresController (SuperVet).
+2026-09-10 18:49:49.041 -03:00 [INF] Executing action method SuperVet.Controllers.TutoresController.GetAll (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.195 -03:00 [INF] Executed action method SuperVet.Controllers.TutoresController.GetAll (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 151.675ms.
+2026-09-10 18:49:49.199 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperVet.DTOs.TutorResponseDto, SuperVet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-10 18:49:49.223 -03:00 [INF] Executed action SuperVet.Controllers.TutoresController.GetAll (SuperVet) in 184.1239ms
+2026-09-10 18:49:49.224 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.TutoresController.GetAll (SuperVet)'
+2026-09-10 18:49:49.225 -03:00 [INF] HTTP GET /api/Tutores responded 200 in 213.6325 ms
+2026-09-10 18:49:49.228 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Tutores - 200 null application/json; charset=utf-8 236.8655ms
+2026-09-10 18:49:49.250 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 62
+2026-09-10 18:49:49.253 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.260 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.279 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.336 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:49:49.337 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 57.6937ms.
+2026-09-10 18:49:49.337 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:49:49.349 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 88.8506ms
+2026-09-10 18:49:49.349 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.349 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 97.6518 ms
+2026-09-10 18:49:49.350 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 99.8487ms
+2026-09-10 18:49:49.353 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:49:49.354 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:49:49.359 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.361 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.391 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:49:49.393 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 32.1706ms.
+2026-09-10 18:49:49.393 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:49:49.393 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 34.4068ms
+2026-09-10 18:49:49.393 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:49:49.393 -03:00 [INF] HTTP DELETE /api/Usuarios/3 responded 204 in 39.5523 ms
+2026-09-10 18:49:49.394 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/3 - 204 null null 40.6525ms
+2026-09-10 18:49:49.394 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/3 - null null
+2026-09-10 18:49:49.395 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.400 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.401 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.408 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 6.799ms.
+2026-09-10 18:49:49.408 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:49:49.409 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 9.6951ms
+2026-09-10 18:49:49.409 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.409 -03:00 [INF] HTTP GET /api/Usuarios/3 responded 404 in 15.3857 ms
+2026-09-10 18:49:49.409 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/3 - 404 null text/plain; charset=utf-8 15.5755ms
+2026-09-10 18:49:49.412 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 64
+2026-09-10 18:49:49.413 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:49:49.417 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.418 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.429 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 11.7474ms.
+2026-09-10 18:49:49.430 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:49:49.430 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 12.9463ms
+2026-09-10 18:49:49.430 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:49:49.430 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 400 in 17.3707 ms
+2026-09-10 18:49:49.430 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 400 null text/plain; charset=utf-8 17.6487ms
+2026-09-10 18:49:49.439 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/Usuarios/1 - application/json; charset=utf-8 77
+2026-09-10 18:49:49.439 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:49:49.439 -03:00 [INF] Route matched with {action = "Update", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.439 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Update (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.446 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:49:49.446 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Update (SuperVet), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 6.6375ms.
+2026-09-10 18:49:49.446 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-09-10 18:49:49.446 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Update (SuperVet) in 7.1188ms
+2026-09-10 18:49:49.446 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Update (SuperVet)'
+2026-09-10 18:49:49.446 -03:00 [INF] HTTP PUT /api/Usuarios/1 responded 204 in 7.3270 ms
+2026-09-10 18:49:49.446 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/Usuarios/1 - 204 null null 7.8112ms
+2026-09-10 18:49:49.447 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/1 - null null
+2026-09-10 18:49:49.448 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.448 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.448 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.450 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4543ms.
+2026-09-10 18:49:49.450 -03:00 [INF] Executing OkObjectResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:49:49.450 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 2.1097ms
+2026-09-10 18:49:49.450 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.450 -03:00 [INF] HTTP GET /api/Usuarios/1 responded 200 in 2.4167 ms
+2026-09-10 18:49:49.450 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/1 - 200 null application/json; charset=utf-8 2.7116ms
+2026-09-10 18:49:49.453 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 67
+2026-09-10 18:49:49.453 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.454 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.454 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.455 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:49:49.455 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.7009ms.
+2026-09-10 18:49:49.455 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:49:49.455 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.6357ms
+2026-09-10 18:49:49.455 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.455 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.8928 ms
+2026-09-10 18:49:49.455 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 2.1365ms
+2026-09-10 18:49:49.456 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 67
+2026-09-10 18:49:49.457 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.457 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.457 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.458 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.553ms.
+2026-09-10 18:49:49.458 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-09-10 18:49:49.458 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.2962ms
+2026-09-10 18:49:49.458 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.458 -03:00 [INF] HTTP POST /api/Usuarios responded 400 in 1.7216 ms
+2026-09-10 18:49:49.458 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 400 null text/plain; charset=utf-8 2.0548ms
+2026-09-10 18:49:49.461 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2026-09-10 18:49:49.462 -03:00 [INF] Executing endpoint 'Health checks'
+2026-09-10 18:49:49.472 -03:00 [INF] Executed endpoint 'Health checks'
+2026-09-10 18:49:49.473 -03:00 [INF] HTTP GET /health responded 200 in 12.1346 ms
+2026-09-10 18:49:49.474 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null text/plain 13.0673ms
+2026-09-10 18:49:49.476 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:49:49.476 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:49:49.476 -03:00 [INF] Route matched with {action = "Delete", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.476 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Delete (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.477 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Delete (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.461ms.
+2026-09-10 18:49:49.477 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:49:49.477 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Delete (SuperVet) in 1.2054ms
+2026-09-10 18:49:49.477 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Delete (SuperVet)'
+2026-09-10 18:49:49.477 -03:00 [INF] HTTP DELETE /api/Usuarios/9999 responded 404 in 1.4804 ms
+2026-09-10 18:49:49.477 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.6998ms
+2026-09-10 18:49:49.480 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/Usuarios - application/json; charset=utf-8 64
+2026-09-10 18:49:49.480 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.480 -03:00 [INF] Route matched with {action = "Create", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(SuperVet.DTOs.UsuarioRequestDto) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.480 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.Create (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.481 -03:00 [INF] Saved 1 entities to in-memory store.
+2026-09-10 18:49:49.481 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.Create (SuperVet), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 0.5921ms.
+2026-09-10 18:49:49.481 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'SuperVet.DTOs.UsuarioResponseDto'.
+2026-09-10 18:49:49.482 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.Create (SuperVet) in 1.4126ms
+2026-09-10 18:49:49.482 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.Create (SuperVet)'
+2026-09-10 18:49:49.482 -03:00 [INF] HTTP POST /api/Usuarios responded 201 in 1.6163 ms
+2026-09-10 18:49:49.482 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/Usuarios - 201 null application/json; charset=utf-8 1.8353ms
+2026-09-10 18:49:49.484 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/Usuarios/9999 - null null
+2026-09-10 18:49:49.484 -03:00 [INF] Executing endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.484 -03:00 [INF] Route matched with {action = "GetById", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller SuperVet.Controllers.UsuariosController (SuperVet).
+2026-09-10 18:49:49.485 -03:00 [INF] Executing action method SuperVet.Controllers.UsuariosController.GetById (SuperVet) - Validation state: "Valid"
+2026-09-10 18:49:49.485 -03:00 [INF] Executed action method SuperVet.Controllers.UsuariosController.GetById (SuperVet), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 0.4039ms.
+2026-09-10 18:49:49.485 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-09-10 18:49:49.485 -03:00 [INF] Executed action SuperVet.Controllers.UsuariosController.GetById (SuperVet) in 0.9297ms
+2026-09-10 18:49:49.485 -03:00 [INF] Executed endpoint 'SuperVet.Controllers.UsuariosController.GetById (SuperVet)'
+2026-09-10 18:49:49.485 -03:00 [INF] HTTP GET /api/Usuarios/9999 responded 404 in 1.1310 ms
+2026-09-10 18:49:49.485 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/Usuarios/9999 - 404 null text/plain; charset=utf-8 1.3212ms
+2026-09-10 18:49:49.492 -03:00 [INF] Application is shutting down...
+2026-09-10 21:22:15.806 -03:00 [INF] Now listening on: http://localhost:5159
+2026-09-10 21:22:15.835 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-10 21:22:15.837 -03:00 [INF] Hosting environment: Development
+2026-09-10 21:22:15.837 -03:00 [INF] Content root path: D:\Projetos.net\SuperVet
+2026-09-10 21:22:34.851 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5159/metrics - null null
+2026-09-10 21:22:34.873 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-10 21:22:34.877 -03:00 [INF] Executing endpoint '/metrics'
+2026-09-10 21:22:34.915 -03:00 [INF] Executed endpoint '/metrics'
+2026-09-10 21:22:34.918 -03:00 [INF] HTTP GET /metrics responded 200 in 56.9744 ms
+2026-09-10 21:22:34.922 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5159/metrics - 200 null text/plain; version=0.0.4; charset=utf-8 80.2241ms
+2026-09-10 21:26:50.938 -03:00 [INF] Application is shutting down...

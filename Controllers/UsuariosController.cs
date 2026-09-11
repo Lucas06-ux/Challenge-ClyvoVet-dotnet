@@ -1,19 +1,20 @@
-﻿using Challenge_Sprints1e2.Data;
-using Challenge_Sprints1e2.Models;
+﻿using SuperVet.Data;
+using SuperVet.Services;
+using SuperVet.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Challenge_Sprints1e2.DTOs;
+using SuperVet.DTOs;
 
-namespace Challenge_Sprints1e2.Controllers
+namespace SuperVet.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class UsuariosController : ControllerBase
     {
-        private readonly AppDbContext dbContext;
-        public UsuariosController(AppDbContext _dbContext)
+        private readonly IUsuarioService _service;
+        public UsuariosController(IUsuarioService service)
         {
-            dbContext = _dbContext;
+            _service = service;
         }
 
         /// <summary>
@@ -33,11 +34,7 @@ namespace Challenge_Sprints1e2.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAll()
         {
-            var usuarios = await dbContext.Usuarios.Select(u => new UsuarioResponseDto
-       {
-           IdUsuario = u.IdUsuario, Email = u.Email, TipoUsuario = u.TipoUsuario, DataCriacao = u.DataCriacao
-       })
-       .ToListAsync();
+            var usuarios = await _service.GetAllAsync();
             return Ok(usuarios);
         }
 
@@ -56,15 +53,8 @@ namespace Challenge_Sprints1e2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById(int id)
         {
-            var usuario = await dbContext.Usuarios.Where(u => u.IdUsuario == id).Select(u => new UsuarioResponseDto
-       {
-           IdUsuario = u.IdUsuario, Email = u.Email, TipoUsuario = u.TipoUsuario, DataCriacao = u.DataCriacao
-       })
-            .FirstOrDefaultAsync();
-            if (usuario == null)
-            {
-                return NotFound("Usuário de ID " + id + " não encontrado.");
-            }
+            var usuario = await _service.GetByIdAsync(id);
+            if (usuario == null) return NotFound($"Usuário de ID {id} não encontrado.");
             return Ok(usuario);
         }
 
@@ -83,15 +73,8 @@ namespace Challenge_Sprints1e2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetByEmail(string email)
         {
-            var usuario = await dbContext.Usuarios.Where(u => u.Email == email).Select(u => new UsuarioResponseDto
-        {
-            IdUsuario = u.IdUsuario, Email = u.Email, TipoUsuario = u.TipoUsuario, DataCriacao = u.DataCriacao
-        })
-        .FirstOrDefaultAsync();
-            if (usuario == null)
-            {
-                return NotFound("Usuário com o e-mail " + email + " não encontrado.");
-            }
+            var usuario = await _service.GetByEmailAsync(email);
+            if (usuario == null) return NotFound($"Usuário com o e-mail {email} não encontrado.");
             return Ok(usuario);
         }
 
@@ -122,11 +105,7 @@ namespace Challenge_Sprints1e2.Controllers
             {
                 return BadRequest("Usuário com o tipo " + tipo + " inválido. Informe TUTOR ou VETERINARIO.");
             }
-            var usuarios =
-                await dbContext.Usuarios.Where(u =>u.TipoUsuario == tipo)
-                .Select(u =>new UsuarioResponseDto
-                    {IdUsuario =  u.IdUsuario, Email = u.Email, TipoUsuario = u.TipoUsuario, DataCriacao = u.DataCriacao
-                    }) .ToListAsync();
+            var usuarios = await _service.GetByTipoAsync(tipo);
             return Ok(usuarios);
         }
 
@@ -153,26 +132,15 @@ namespace Challenge_Sprints1e2.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Create(UsuarioRequestDto usuarioToSave)
         {
-            usuarioToSave.TipoUsuario = usuarioToSave.TipoUsuario.ToUpper();
-            if (usuarioToSave.TipoUsuario != "TUTOR" && usuarioToSave.TipoUsuario != "VETERINARIO")
+            try
             {
-                return BadRequest("Tipo de usuário " + usuarioToSave.TipoUsuario + " inválido (Tutor ou Veterinário).");
+                var created = await _service.CreateAsync(usuarioToSave);
+                return CreatedAtAction(nameof(GetById), new { id = created.IdUsuario }, created);
             }
-            var emailJaExiste = await dbContext.Usuarios.AnyAsync(u => u.Email == usuarioToSave.Email);
-            if (emailJaExiste)
+            catch (InvalidOperationException ex)
             {
-                return BadRequest("E-mail " + usuarioToSave.Email + " já cadastrado.");
+                return BadRequest(ex.Message);
             }
-            var usuario = new Usuario
-            { IdUsuario = await dbContext .GetNextSequenceValueAsync("SEQ_USUARIO"), Email = usuarioToSave.Email, Senha = usuarioToSave.Senha,
-                TipoUsuario = usuarioToSave.TipoUsuario, DataCriacao = DateTime.Now 
-            };
-            dbContext.Usuarios.Add(usuario);
-            await dbContext.SaveChangesAsync();
-            return CreatedAtAction( nameof(GetById), new { id = usuario.IdUsuario },new UsuarioResponseDto 
-                {
-                    IdUsuario = usuario.IdUsuario, Email = usuario.Email, TipoUsuario = usuario.TipoUsuario, DataCriacao = usuario.DataCriacao
-                });
         }
 
         /// <summary>
@@ -198,28 +166,15 @@ namespace Challenge_Sprints1e2.Controllers
         public async Task<IActionResult> Update(int id,UsuarioRequestDto usuario
         )
         {
-            var usuarioExistente =
-                await dbContext.Usuarios.FindAsync(id);
-            if (usuarioExistente == null)
+            try
             {
-                return NotFound("Usuário com o id " + id + " não encontrado.");
+                var updated = await _service.UpdateAsync(id, usuario);
+                return updated ? NoContent() : NotFound($"Usuário com o id {id} não encontrado.");
             }
-            usuario.TipoUsuario = usuario.TipoUsuario.ToUpper();
-            if (usuario.TipoUsuario != "TUTOR" && usuario.TipoUsuario != "VETERINARIO")
+            catch (InvalidOperationException ex)
             {
-                return BadRequest("Tipo de usuário " + usuario.TipoUsuario + " inválido. Informe apenas TUTOR ou VETERINARIO.");
+                return BadRequest(ex.Message);
             }
-            var emailJaExiste = await dbContext.Usuarios
-                .AnyAsync(u => u.Email == usuario.Email && u.IdUsuario != id);
-            if (emailJaExiste)
-            {
-                return BadRequest( "E-mail " + usuario.Email + " já cadastrado no sistema. Informe outro e-mail.");
-            }
-            usuarioExistente.Email = usuario.Email;
-            usuarioExistente.Senha = usuario.Senha;
-            usuarioExistente.TipoUsuario = usuario.TipoUsuario;
-            await dbContext.SaveChangesAsync();
-            return NoContent();
         }
 
         /// <summary>
@@ -236,30 +191,15 @@ namespace Challenge_Sprints1e2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(int id)
         {
-            var usuario = await dbContext.Usuarios.FindAsync(id);
-
-            if (usuario == null)
+            try
             {
-                return NotFound("Usuário com o id " + id + " não encontrado no sistema.");
+                var deleted = await _service.DeleteAsync(id);
+                return deleted ? NoContent() : NotFound($"Usuário com o id {id} não encontrado no sistema.");
             }
-
-            var possuiTutor = await dbContext.Tutores.AnyAsync(t => t.IdUsuario == id);
-
-            if (possuiTutor)
+            catch (InvalidOperationException ex)
             {
-                return BadRequest("Impossível remover este usuário. Apague a conta de tutor primeiro.");
+                return BadRequest(ex.Message);
             }
-
-            var possuiVeterinario = await dbContext.Veterinarios.AnyAsync(v => v.IdUsuario == id);
-
-            if (possuiVeterinario)
-            {
-                return BadRequest("Impossível remover este usuário. Apague a conta de veterinário primeiro.");
-            }
-
-            dbContext.Usuarios.Remove(usuario);
-            await dbContext.SaveChangesAsync();
-            return NoContent();
         }
     }
 }

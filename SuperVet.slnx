@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SuperVet.csproj" />
+  <Project Path="SuperVet.Integrations.Tests/SuperVet.Integrations.Tests.csproj" Id="1511f0e3-ae58-4431-9ddf-02426148acad" />
+  <Project Path="SuperVet.Tests/SuperVet.Tests.csproj" />
+</Solution>

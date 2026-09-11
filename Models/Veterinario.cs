@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Challenge_Sprints1e2.Models
+namespace SuperVet.Models
 {
     //TABELA DO BANCO DE DADOS 
     [Table("TB_VETERINARIO")]

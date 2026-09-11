@@ -1,7 +1,7 @@
-﻿using Challenge_Sprints1e2.Models;
+﻿using SuperVet.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Challenge_Sprints1e2.Data
+namespace SuperVet.Data
 {
     public class AppDbContext : DbContext
     {
@@ -17,19 +17,34 @@ namespace Challenge_Sprints1e2.Data
 
         public async Task<int> GetNextSequenceValueAsync(string sequenceName)
         {
-            var connection = Database.GetDbConnection();
-
-            if (connection.State != System.Data.ConnectionState.Open)
+            // Se o provedor for relacional (ex.: Oracle) usa a sequence
+            if (Database.IsRelational())
             {
-                await connection.OpenAsync();
+                var connection = Database.GetDbConnection();
+
+                if (connection.State != System.Data.ConnectionState.Open)
+                {
+                    await connection.OpenAsync();
+                }
+
+                await using var command = connection.CreateCommand();
+                command.CommandText = $"SELECT {sequenceName}.NEXTVAL FROM DUAL";
+
+                var result = await command.ExecuteScalarAsync();
+
+                return Convert.ToInt32(result);
             }
 
-            await using var command = connection.CreateCommand();
-            command.CommandText = $"SELECT {sequenceName}.NEXTVAL FROM DUAL";
-
-            var result = await command.ExecuteScalarAsync();
-
-            return Convert.ToInt32(result);
+            // Fallback para provedores não-relacionais (ex.: InMemory) utilizado nos testes.
+            // Retorna próximo Id baseado no maior Id já presente em cada DbSet.
+            sequenceName = sequenceName?.ToUpperInvariant() ?? string.Empty;
+            return sequenceName switch
+            {
+                "SEQ_USUARIO" => (await Usuarios.AnyAsync()) ? await Usuarios.MaxAsync(u => u.IdUsuario) + 1 : 1,
+                "SEQ_TUTOR" => (await Tutores.AnyAsync()) ? await Tutores.MaxAsync(t => t.IdTutor) + 1 : 1,
+                "SEQ_VETERINARIO" => (await Veterinarios.AnyAsync()) ? await Veterinarios.MaxAsync(v => v.IdVeterinario) + 1 : 1,
+                _ => 1
+            };
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

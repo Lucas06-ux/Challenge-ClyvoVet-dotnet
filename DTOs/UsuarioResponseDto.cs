@@ -1,4 +1,4 @@
-﻿namespace Challenge_Sprints1e2.DTOs
+﻿namespace SuperVet.DTOs
 {
     public class UsuarioResponseDto
     {

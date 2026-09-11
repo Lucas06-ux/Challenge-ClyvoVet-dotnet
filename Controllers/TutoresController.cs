@@ -1,10 +1,10 @@
-﻿using Challenge_Sprints1e2.Data;
-using Challenge_Sprints1e2.DTOs;
-using Challenge_Sprints1e2.Models;
+﻿using SuperVet.Data;
+using SuperVet.DTOs;
+using SuperVet.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Challenge_Sprints1e2.Controllers
+namespace SuperVet.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

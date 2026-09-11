@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Challenge_Sprints1e2.Migrations
+namespace SuperVet.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMapping : Migration

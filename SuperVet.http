@@ -1,0 +1,6 @@
+@SuperVet_HostAddress = http://localhost:5159
+
+GET {{SuperVet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
